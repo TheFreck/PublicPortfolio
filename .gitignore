@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/PublicPortfolio/.vs/PublicPortfolio/config
+/PublicPortfolio/.vs/PublicPortfolio/FileContentIndex
+/PublicPortfolio/.vs/PublicPortfolio/v17/TestStore/0
+/PublicPortfolio/.vs/PublicPortfolio/v17
+/PublicPortfolio/publicportfolio.client/obj/Debug
+/PublicPortfolio/PublicPortfolio.Server/bin/Debug/net8.0
+/PublicPortfolio/PublicPortfolio.Server/obj
