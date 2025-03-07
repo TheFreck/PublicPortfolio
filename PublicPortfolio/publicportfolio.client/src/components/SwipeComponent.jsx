@@ -10,14 +10,14 @@ const viewEnum = {
 };
 
 const routes = [
-  "/Portfolio/",
-  "/Portfolio/Projects",
-  "/Portfolio/ReadingList",
-  "/Portfolio/Endorsements"
+    "/Portfolio/",
+    "/Portfolio/Projects",
+    "/Portfolio/ReadingList",
+    "/Portfolio/Endorsements"
 ];
 
 export const SwipeComponent = (props) => {
-    const {view,setView} = props;
+    const { view, setView } = props;
 
     const [swipeLeft, setSwipeLeft] = useState(false);
     const [swipeRight, setSwipeRight] = useState(false);
@@ -29,7 +29,7 @@ export const SwipeComponent = (props) => {
         setSwipeLeft(false);
         setSwipeRight(false);
     }, [view]);
-    
+
     const minSwipeDistance = 100;
 
     useEffect(() => {
@@ -39,8 +39,8 @@ export const SwipeComponent = (props) => {
             touchStartY: null,
             touchEndY: null,
         };
-    },[]);
-    
+    }, []);
+
     const handleTouchStart = (e) => {
         touchRef.current.touchStartX = e.targetTouches[0].clientX;
         touchRef.current.touchStartY = e.targetTouches[0].clientY;
@@ -51,57 +51,53 @@ export const SwipeComponent = (props) => {
     const handleTouchMove = (e) => {
         touchRef.current.touchEndX = e.targetTouches[0].clientX;
         touchRef.current.touchEndY = e.targetTouches[0].clientY;
-        if(touchRef.current.touchEndX-touchRef.current.touchStartX > minSwipeDistance){
+        if (touchRef.current.touchEndX - touchRef.current.touchStartX > minSwipeDistance) {
             setSwipeLeft(true);
         }
-        else{
+        else {
             setSwipeLeft(false);
         }
-        if(touchRef.current.touchStartX-touchRef.current.touchEndX > minSwipeDistance){
+        if (touchRef.current.touchStartX - touchRef.current.touchEndX > minSwipeDistance) {
             setSwipeRight(true);
         }
-        else{
+        else {
             setSwipeRight(false);
         }
     }
 
-    const handleTouchEnd = (e) => {
+    const handleTouchEnd = () => {
         if (!touchRef.current.touchStartX || !touchRef.current.touchEndX) return;
-        if(Math.abs(touchRef.current.touchStartY-touchRef.current.touchEndY) >= Math.abs(touchRef.current.touchStartX-touchRef.current.touchEndX)) return;
-        console.log("touch end");
+        if (Math.abs(touchRef.current.touchStartY - touchRef.current.touchEndY) >= Math.abs(touchRef.current.touchStartX - touchRef.current.touchEndX)) return;
         const distance = touchRef.current.touchEndX - touchRef.current.touchStartX;
         if (distance > minSwipeDistance) {
             setView(((view + 4) - 1) % 4);
         }
         else
-        if (distance < -minSwipeDistance) {
-            setView((view + 1) % 4);
-        }
+            if (distance < -minSwipeDistance) {
+                setView((view + 1) % 4);
+            }
     }
 
     return <Box
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
-        sx={{background: "red"}}
     >
         <SwipeableDrawer
             anchor="left"
             open={swipeLeft}
         >
-            <Box
-            >
-                <Typography
+            <Typography
                 variant="h6"
-                    sx={{
-                        writingMode: "vertical-rl",
-                        textOrientation: "upright",
-                        background: "content-box"
-                    }}
-                    >
-                    Go to {Object.keys(viewEnum)[((view + 4) - 1) % 4]}
-                </Typography>
-            </Box>
+                sx={{
+                    writingMode: "vertical-rl",
+                    textOrientation: "upright",
+                    background: "content-box",
+                    paddingTop: "10vh"
+                }}
+            >
+                go to {Object.keys(viewEnum)[((view + 4) - 1) % 4]}
+            </Typography>
         </SwipeableDrawer>
         {props.children}
         <SwipeableDrawer
@@ -109,13 +105,15 @@ export const SwipeComponent = (props) => {
             open={swipeRight}
         >
             <Typography
+                variant="h6"
                 sx={{
                     writingMode: "vertical-rl",
                     textOrientation: "upright",
-                    background: "transparent"
+                    background: "transparent",
+                    paddingTop: "10vh"
                 }}
             >
-                Go to {Object.keys(viewEnum)[(view + 1) % 4]}
+                go to {Object.keys(viewEnum)[(view + 1) % 4]}
             </Typography>
         </SwipeableDrawer>
     </Box>
