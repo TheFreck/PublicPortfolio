@@ -29,7 +29,7 @@ export const AboutMe = ({isMobile}) => {
             width: "100vw !important",
             margin: "0 !important",
             height: "100vh",
-            padding: "0 0 5vh 0 !important",
+            padding: "0 0 10vh 0 !important",
             overflowY: "auto"
         }}
     >

@@ -10,6 +10,9 @@ export const Projects = ({ isMobile }) => {
     const tracker = EventTracker("Projects");
     const [open, setOpen] = useState(false);
     const [current, setCurrent] = useState(<Primes />);
+    const [repo, setRepo] = useState("");
+    const [title, setTitle] = useState("");
+
     const modalRef = useRef();
 
     useEffect(() => {
@@ -47,33 +50,15 @@ export const Projects = ({ isMobile }) => {
                             onClick={() => {
                                 setCurrent(p.project.link)
                                 setOpen(true);
+                                setRepo(p.project.repo);
+                                setTitle(p.project.title);
                                 tracker("read about project",p.project.title);
                             }}
                         />
-                        <Link
-                            href={p.project.repo}
-                            target="_blank"
-                            onClick={() => tracker("go to repo", p.project.title)}
-                        >
-                            <ImageListItemBar
-                                title={<h2>{p.title}</h2>}
-                                subtitle={<h2>View Repo</h2>}
-                                actionIcon={
-                                    <IconButton>
-                                        <GitHubIcon
-                                            sx={{
-                                                width: "20vw",
-                                                height: "20vw"
-                                            }}
-                                        />
-                                    </IconButton>
-                                }
-                            >
-                            </ImageListItemBar>
-                        </Link>
                     </ImageListItem>
                 ))
-            }<Modal
+            }
+            <Modal
                 open={open}
                 onClose={() => setOpen(false)}
                 ref={modalRef}
@@ -81,8 +66,11 @@ export const Projects = ({ isMobile }) => {
                 <Box
                     sx={{
                         background: "white",
-                        width: "80vw",
-                        margin: "5vh auto"
+                        width: "100vw",
+                        margin: "5vh auto",
+                        height: "90vh",
+                        overflowY: "auto",
+                        paddingBottom: "10vh"
                     }}
                 >
                     <Grid2
@@ -104,6 +92,24 @@ export const Projects = ({ isMobile }) => {
                     </Grid2>
                     <Grid2>
                         {current}
+                    </Grid2>
+                    <Grid2>
+                        <Link
+                            href={repo}
+                            target="_blank"
+                            onClick={() => tracker("go to repo", title)}
+                        >
+                        <ImageListItemBar
+                            title={title}
+                            subtitle="View Repo"
+                            actionIcon={
+                                <IconButton>
+                                    <GitHubIcon />
+                                </IconButton>
+                            }
+                        >
+                        </ImageListItemBar>
+                        </Link>
                     </Grid2>
                 </Box>
             </Modal>
