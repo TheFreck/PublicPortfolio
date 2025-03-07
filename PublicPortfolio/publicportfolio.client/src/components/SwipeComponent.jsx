@@ -93,10 +93,11 @@ export const SwipeComponent = (props) => {
                     writingMode: "vertical-rl",
                     textOrientation: "upright",
                     background: "content-box",
-                    paddingTop: "10vh"
+                    paddingTop: "10vh",
+                    letterSpacing: "1em"
                 }}
             >
-                go to {Object.keys(viewEnum)[((view + 4) - 1) % 4]}
+                {Object.keys(viewEnum)[((view + 4) - 1) % 4]}
             </Typography>
         </SwipeableDrawer>
         {props.children}
@@ -110,10 +111,11 @@ export const SwipeComponent = (props) => {
                     writingMode: "vertical-rl",
                     textOrientation: "upright",
                     background: "transparent",
-                    paddingTop: "10vh"
+                    paddingTop: "10vh",
+                    letterSpacing: "1em"
                 }}
             >
-                go to {Object.keys(viewEnum)[(view + 1) % 4]}
+                {Object.keys(viewEnum)[(view + 1) % 4]}
             </Typography>
         </SwipeableDrawer>
     </Box>
