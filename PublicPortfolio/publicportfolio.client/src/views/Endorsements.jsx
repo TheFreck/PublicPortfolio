@@ -14,7 +14,7 @@ export const Endorsements = ({isMobile}) => {
     useEffect(() => {
         document.getElementById(expanded)?.scrollIntoView();
         if(expanded !== -1){
-            tracker("view endorsement,",endorsements[expanded].summary.props.children[0].props.children);
+            tracker("view endorsement",endorsements[expanded].summary.props.children[0].props.children);
         }
     },[expanded]);
 

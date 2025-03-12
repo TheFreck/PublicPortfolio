@@ -6,14 +6,16 @@ const viewEnum = {
     about: 0,
     projects: 1,
     books: 2,
-    endorsements: 3
+    endorsements: 3,
+    writing: 4
 };
 
 const routes = [
     "/Portfolio/",
     "/Portfolio/Projects",
     "/Portfolio/ReadingList",
-    "/Portfolio/Endorsements"
+    "/Portfolio/Endorsements",
+    "/Portfolio/Writing"
 ];
 
 export const SwipeComponent = (props) => {
@@ -70,11 +72,11 @@ export const SwipeComponent = (props) => {
         if (Math.abs(touchRef.current.touchStartY - touchRef.current.touchEndY) >= Math.abs(touchRef.current.touchStartX - touchRef.current.touchEndX)) return;
         const distance = touchRef.current.touchEndX - touchRef.current.touchStartX;
         if (distance > minSwipeDistance) {
-            setView(((view + 4) - 1) % 4);
+            setView(((view + 5) - 1) % 5);
         }
         else
             if (distance < -minSwipeDistance) {
-                setView((view + 1) % 4);
+                setView((view + 1) % 5);
             }
     }
 
@@ -97,7 +99,7 @@ export const SwipeComponent = (props) => {
                     letterSpacing: "1em"
                 }}
             >
-                {Object.keys(viewEnum)[((view + 4) - 1) % 4]}
+                {Object.keys(viewEnum)[((view + 5) - 1) % 5]}
             </Typography>
         </SwipeableDrawer>
         {props.children}
@@ -115,7 +117,7 @@ export const SwipeComponent = (props) => {
                     letterSpacing: "1em"
                 }}
             >
-                {Object.keys(viewEnum)[(view + 1) % 4]}
+                {Object.keys(viewEnum)[(view + 1) % 5]}
             </Typography>
         </SwipeableDrawer>
     </Box>

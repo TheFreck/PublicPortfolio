@@ -7,15 +7,9 @@ const viewEnum = {
     about: 0,
     projects: 1,
     books: 2,
-    endorsements: 3
+    endorsements: 3,
+    writing: 4
 };
-
-const routes = [
-  "/Portfolio/",
-  "/Portfolio/Projects",
-  "/Portfolio/ReadingList",
-  "/Portfolio/Endorsements"
-];
 
 export const Layout = (props) => {
     const {isMobile,view} = props;
@@ -65,7 +59,7 @@ export const Layout = (props) => {
                 >
                     {
                         !isMobile &&
-                        <Grid2 size={2.5} />
+                        <Grid2 size={1.6} />
                     }
                     {
                         (!isMobile || (isMobile && view === viewEnum.about)) &&
@@ -127,6 +121,22 @@ export const Layout = (props) => {
                                     }}
                                 >
                                     Endorsements
+                                </Typography>
+                            </NavLink>
+                        </Grid2>
+                    }
+                    {
+                        (!isMobile || (isMobile && view === viewEnum.writing)) &&
+                        <Grid2 size={isMobile ? 12 : 2}>
+                            <NavLink to="/Portfolio/Writing" end>
+                                <Typography
+                                    sx={{
+                                        cursor: "pointer",
+                                        color: "#303030",
+                                        fontSize: isMobile ? (view === viewEnum.writing ? "8vw" : "3vw") : "1vw"
+                                    }}
+                                >
+                                    Writing
                                 </Typography>
                             </NavLink>
                         </Grid2>
