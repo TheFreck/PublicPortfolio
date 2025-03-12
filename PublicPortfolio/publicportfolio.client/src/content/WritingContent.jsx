@@ -260,7 +260,7 @@ export const lyrics = [
             <Typography>but tomorrow goes your way</Typography>
             <Typography>and be grateful</Typography>
             <br />
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br />
             <Typography>pick your poison</Typography>
             <Typography>tap your tune</Typography>
@@ -269,7 +269,7 @@ export const lyrics = [
             <Typography>and sometimes you've gotta fight to hold on</Typography>
             <br />
             <Typography>clear your head before you let it roll</Typography>
-            <Typography>give 'em hell until it follow you home</Typography>
+            <Typography>give 'em hell until it follows you home</Typography>
             <Typography>and you hope someday they'll understand</Typography>
             <Typography>but what you do today sets the tone</Typography>
             <br />
@@ -305,7 +305,7 @@ export const lyrics = [
             <Typography>while swimming through oceans of stars in the desert</Typography>
             <Typography>and milking the night for her infinite lunacies</Typography>
             <br />
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br />
             <Typography>rub your eyes</Typography>
             <Typography>morning come rise</Typography>
@@ -327,7 +327,7 @@ export const lyrics = [
             <Typography>free to fail, fall or fly away</Typography>
             <Typography>sailing a star through night time to light a new day</Typography>
             <br />
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br />
             <Typography>out here at the edge of the atmosphere</Typography>
             <Typography>beyond the comforts of settled ways</Typography>
@@ -362,8 +362,7 @@ export const lyrics = [
             <Typography>but somehow sharing yours and my load</Typography>
             <Typography>makes both our loads easier to bear</Typography>
             <br />
-            <Typography>[<em>music</em>]</Typography>
-            <br />
+            <Typography>[<em>instrumental</em>]</Typography>
             <Typography>[<em>chorus</em>]</Typography>
             <br />
             <Typography>it's nothing to me</Typography>
@@ -386,7 +385,7 @@ export const lyrics = [
             <Typography>and no-one knows how we got here</Typography>
             <Typography>and dreams like this last a lifetime</Typography>
             <br />
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br />
             <Typography>and no-one knows where we are now</Typography>
             <Typography>or knows the way back home</Typography>
@@ -431,7 +430,7 @@ export const lyrics = [
             <Typography>but everything you see becomes important</Typography>
             <Typography>wouldn't you know it the sky's already calling my name</Typography>
             <br />
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br />
             <Typography>and we both know how far we've come to feel this</Typography>
             <Typography>and everything we see becomes a paintbrush</Typography>
@@ -458,7 +457,7 @@ export const lyrics = [
             <Typography>What could go wrong</Typography>
             <Typography>When you're in the right</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>Hear</Typography>
             <Typography>Just what psychophants will say</Typography>
@@ -467,7 +466,7 @@ export const lyrics = [
             <Typography>What could go wrong</Typography>
             <Typography>When you're in the right</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>Cast</Typography>
             <Typography>Cast your stones about your throne</Typography>
@@ -476,7 +475,7 @@ export const lyrics = [
             <Typography>What could go wrong</Typography>
             <Typography>When you're in the right</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>Dress</Typography>
             <Typography>Dress the wounds you have sustained</Typography>
@@ -511,7 +510,7 @@ export const lyrics = [
             <Typography>Rest your fears</Typography>
             <Typography>And dream in color</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>Life comes</Typography>
             <Typography>And life will conclude in a moment</Typography>
@@ -554,7 +553,7 @@ export const lyrics = [
             <Typography>&nbsp;&nbsp;and you're the one who stayed</Typography>
             <Typography>It seems that you like it this way</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>All in good time</Typography>
             <Typography>See how you've done</Typography>
@@ -576,7 +575,7 @@ export const lyrics = [
             <Typography>&nbsp;&nbsp;when no army comes to invade</Typography>
             <Typography>It just seems that you like it this way</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>Climb up the backs of giants</Typography>
             <Typography>&nbsp;&nbsp;never reach the top</Typography>
@@ -616,7 +615,7 @@ export const lyrics = [
             <Typography>From where once we found</Typography>
             <Typography>What would be our crown</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>Now that you know</Typography>
             <Typography>What to be when you've grown</Typography>
@@ -663,7 +662,7 @@ export const lyrics = [
             <Typography>Then there's silence when the needle plays through</Typography>
             <Typography>To the eye of the record</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>You say you're looking for meaning</Typography>
             <Typography>But you're getting the feeling it's random</Typography>
@@ -699,7 +698,7 @@ export const lyrics = [
             <Typography>People come up with the craziest of anecdotes</Typography>
             <Typography>Hey everybody get down</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>I can't wrap my head around</Typography>
             <Typography>How people go to sleep so fast</Typography>
@@ -713,7 +712,7 @@ export const lyrics = [
             <Typography>I never seem to know how to tell you that I can't think straight</Typography>
             <Typography>Hey everybody get down</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>I've always meant to shower you with</Typography>
             <Typography>the sounds of sincerity</Typography>
@@ -727,7 +726,7 @@ export const lyrics = [
             <Typography>We'll wake up on the other side</Typography>
             <Typography>Hey everybody get down</Typography>
             <br/>
-            <Typography>[<em>music</em>]</Typography>
+            <Typography>[<em>instrumental</em>]</Typography>
             <br/>
             <Typography>I can't stand to wake up through the dreams of the memories</Typography>
             <Typography>Of people and the places that I really should have been</Typography>

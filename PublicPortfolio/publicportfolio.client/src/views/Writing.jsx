@@ -17,19 +17,22 @@ export const Writing = ({isMobile}) => {
     const [lyricsExpanded,setLyricsExpanded] = useState(-1);
 
     useEffect(() => {
-        tracker("viewu page", "writing");
+        tracker("view page", "writing");
     },[]);
 
     useEffect(() => {
         document.getElementById(essayExpanded)?.scrollIntoView();
+        tracker("read essay",essayExpanded);
     },[essayExpanded]);
     
     useEffect(() => {
         document.getElementById(poetryExpanded)?.scrollIntoView();
+        tracker("read poem",poetryExpanded);
     },[poetryExpanded]);
     
     useEffect(() => {
         document.getElementById(lyricsExpanded)?.scrollIntoView();
+        tracker("read lyrics",lyricsExpanded);
     },[lyricsExpanded]);
 
     const Desktop = () => <Container
