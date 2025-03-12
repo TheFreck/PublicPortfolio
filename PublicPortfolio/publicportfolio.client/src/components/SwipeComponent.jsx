@@ -94,9 +94,13 @@ export const SwipeComponent = (props) => {
                 sx={{
                     writingMode: "vertical-rl",
                     textOrientation: "upright",
-                    background: "content-box",
-                    paddingTop: "10vh",
-                    letterSpacing: "1em"
+                    letterSpacing: "1em",
+                    width: "20vw",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: "auto",
+                    marginBottom: "auto"
                 }}
             >
                 {Object.keys(viewEnum)[((view + 5) - 1) % 5]}
@@ -112,9 +116,12 @@ export const SwipeComponent = (props) => {
                 sx={{
                     writingMode: "vertical-rl",
                     textOrientation: "upright",
-                    background: "transparent",
-                    paddingTop: "10vh",
-                    letterSpacing: "1em"
+                    letterSpacing: "1em",
+                    width: "20vw",
+                    display: "flex",
+                    alignItems: "center",
+                    marginTop: "auto",
+                    marginBottom: "auto"
                 }}
             >
                 {Object.keys(viewEnum)[(view + 1) % 5]}
