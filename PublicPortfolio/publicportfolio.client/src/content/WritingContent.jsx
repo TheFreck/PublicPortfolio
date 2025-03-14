@@ -685,61 +685,61 @@ export const lyrics = [
             <Typography>Then their silence will absorb all of the unsung songs of today</Typography>
         </Box>
     },
-    {
-        title: <Typography><b>A Night in the Life</b></Typography>,
-        body: <Box>
-            <Typography>I can't seem to walk straight</Typography>
-            <Typography>While the earth is still spinning</Typography>
-            <Typography>Hey everybody get down</Typography>
-            <Typography>I can't seem to catch up to the latest beginning</Typography>
-            <Typography>Hey everybody get down</Typography>
-            <Typography>Fill up with the right hand and empty with the left</Typography>
-            <Typography>And then fill up with the right hand again</Typography>
-            <Typography>People come up with the craziest of anecdotes</Typography>
-            <Typography>Hey everybody get down</Typography>
-            <br/>
-            <Typography>[<em>instrumental</em>]</Typography>
-            <br/>
-            <Typography>I can't wrap my head around</Typography>
-            <Typography>How people go to sleep so fast</Typography>
-            <Typography>Bed time comes eventually but not before I can't stand up</Typography>
-            <Typography>Maybe I'll regenerate concurrently with consciousness</Typography>
-            <Typography>And dreams blend into waking and I digitize responsiveness</Typography>
-            <Typography>I can't get around the fact</Typography>
-            <Typography>That nothing comes out right in time</Typography>
-            <Typography>While talking like I mean it</Typography>
-            <Typography>When a straight face might help out the cause</Typography>
-            <Typography>I never seem to know how to tell you that I can't think straight</Typography>
-            <Typography>Hey everybody get down</Typography>
-            <br/>
-            <Typography>[<em>instrumental</em>]</Typography>
-            <br/>
-            <Typography>I've always meant to shower you with</Typography>
-            <Typography>the sounds of sincerity</Typography>
-            <Typography>And dispel the malaise while we're just passing the time</Typography>
-            <Typography>Take a rose to show you care</Typography>
-            <Typography>And take a rose to make them stare</Typography>
-            <Typography>And take a rose for lovers who will be there tonight</Typography>
-            <Typography>But how many times do we pick up and go</Typography>
-            <Typography>And how many times do we care</Typography>
-            <Typography>Somehow if we ride this tide</Typography>
-            <Typography>We'll wake up on the other side</Typography>
-            <Typography>Hey everybody get down</Typography>
-            <br/>
-            <Typography>[<em>instrumental</em>]</Typography>
-            <br/>
-            <Typography>I can't stand to wake up through the dreams of the memories</Typography>
-            <Typography>Of people and the places that I really should have been</Typography>
-            <Typography>And I'd never know the story</Typography>
-            <Typography>Of just how the things that could have been</Typography>
-            <Typography>If not for the reminders barreling down on me in stereo</Typography>
-            <Typography>So hey everybody get down</Typography>
-            <Typography>I said hey everybody get down</Typography>
-            <Typography>Tie another on and find your way back in the morning</Typography>
-            <Typography>Hey everybody get down</Typography>
-            <Typography>Hey everybody get down</Typography>
-        </Box>
-    }
+    // {
+    //     title: <Typography><b>A Night in the Life</b></Typography>,
+    //     body: <Box>
+    //         <Typography>I can't seem to walk straight</Typography>
+    //         <Typography>While the earth is still spinning</Typography>
+    //         <Typography>Hey everybody get down</Typography>
+    //         <Typography>I can't seem to catch up to the latest beginning</Typography>
+    //         <Typography>Hey everybody get down</Typography>
+    //         <Typography>Fill up with the right hand and empty with the left</Typography>
+    //         <Typography>And then fill up with the right hand again</Typography>
+    //         <Typography>People come up with the craziest of anecdotes</Typography>
+    //         <Typography>Hey everybody get down</Typography>
+    //         <br/>
+    //         <Typography>[<em>instrumental</em>]</Typography>
+    //         <br/>
+    //         <Typography>I can't wrap my head around</Typography>
+    //         <Typography>How people go to sleep so fast</Typography>
+    //         <Typography>Bed time comes eventually but not before I can't stand up</Typography>
+    //         <Typography>Maybe I'll regenerate concurrently with consciousness</Typography>
+    //         <Typography>And dreams blend into waking and I digitize responsiveness</Typography>
+    //         <Typography>I can't get around the fact</Typography>
+    //         <Typography>That nothing comes out right in time</Typography>
+    //         <Typography>While talking like I mean it</Typography>
+    //         <Typography>When a straight face might help out the cause</Typography>
+    //         <Typography>I never seem to know how to tell you that I can't think straight</Typography>
+    //         <Typography>Hey everybody get down</Typography>
+    //         <br/>
+    //         <Typography>[<em>instrumental</em>]</Typography>
+    //         <br/>
+    //         <Typography>I've always meant to shower you with</Typography>
+    //         <Typography>the sounds of sincerity</Typography>
+    //         <Typography>And dispel the malaise while we're just passing the time</Typography>
+    //         <Typography>Take a rose to show you care</Typography>
+    //         <Typography>And take a rose to make them stare</Typography>
+    //         <Typography>And take a rose for lovers who will be there tonight</Typography>
+    //         <Typography>But how many times do we pick up and go</Typography>
+    //         <Typography>And how many times do we care</Typography>
+    //         <Typography>Somehow if we ride this tide</Typography>
+    //         <Typography>We'll wake up on the other side</Typography>
+    //         <Typography>Hey everybody get down</Typography>
+    //         <br/>
+    //         <Typography>[<em>instrumental</em>]</Typography>
+    //         <br/>
+    //         <Typography>I can't stand to wake up through the dreams of the memories</Typography>
+    //         <Typography>Of people and the places that I really should have been</Typography>
+    //         <Typography>And I'd never know the story</Typography>
+    //         <Typography>Of just how the things that could have been</Typography>
+    //         <Typography>If not for the reminders barreling down on me in stereo</Typography>
+    //         <Typography>So hey everybody get down</Typography>
+    //         <Typography>I said hey everybody get down</Typography>
+    //         <Typography>Tie another on and find your way back in the morning</Typography>
+    //         <Typography>Hey everybody get down</Typography>
+    //         <Typography>Hey everybody get down</Typography>
+    //     </Box>
+    // }
 ];
 
 export default {

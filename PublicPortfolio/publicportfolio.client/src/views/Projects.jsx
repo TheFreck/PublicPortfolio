@@ -55,6 +55,10 @@ export const Projects = ({ isMobile }) => {
                                 tracker("read about project",p.project.title);
                             }}
                         />
+                        <ImageListItemBar
+                            title={p.title}
+                        >
+                        </ImageListItemBar>
                     </ImageListItem>
                 ))
             }

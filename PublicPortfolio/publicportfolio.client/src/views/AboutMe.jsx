@@ -1,5 +1,5 @@
 import { Box, Container, Grid2, Paper, Tooltip } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import side from "../assets/profileImages/side.jpg";
 import hatTip from "../assets/profileImages/hatTip.jpg";
 import bigSmile from "../assets/profileImages/bigSmile.jpg";
@@ -7,6 +7,7 @@ import hatSmile from "../assets/profileImages/hatSmile.jpg";
 import hatSmile2 from "../assets/profileImages/hatSmile2.jpg";
 import content from "../content/AboutMeContent";
 import EventTracker from "../EventTracker";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 export const AboutMe = ({isMobile}) => {
     const tracker = EventTracker("About Me");
@@ -29,10 +30,31 @@ export const AboutMe = ({isMobile}) => {
             width: "100vw !important",
             margin: "0 !important",
             height: "100vh",
-            padding: "0 0 10vh 0 !important",
+            padding: "0 0 20vh 0 !important",
             overflowY: "auto"
         }}
     >
+        <ArrowBackIosIcon
+            sx={{
+                position: "absolute",
+                left: 0,
+                marginTop: "40vh",
+                opacity: ".25",
+                color: "black",
+                fontSize: "3em"
+            }}
+        />
+        <ArrowBackIosIcon
+            sx={{
+                position: "absolute",
+                right: 0,
+                marginTop: "40vh",
+                opacity: ".25",
+                color: "black",
+                fontSize: "3em",
+                transform: "scaleX(-1)"
+            }}
+        />
         <Box>
             <img 
                 src={profileImages[imageClick]} 
