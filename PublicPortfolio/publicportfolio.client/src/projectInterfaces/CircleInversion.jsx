@@ -62,6 +62,9 @@ export const CircleInversion = () => {
             </Typography>
             <br/>
             <Stack
+                direction={navigator.maxTouchPoints > 0 ? "column" : "row"}
+            >
+            <Stack
                 direction="row"
                 spacing={2}
             >
@@ -102,6 +105,11 @@ export const CircleInversion = () => {
                         position="below"
                     />
                 </ImageListItem>
+            </Stack>
+            <Stack
+                direction="row"
+                spacing={2}
+            >
                 <ImageListItem
                 >
                     <img style={logoStyles} src={threeLogo} alt="logo for THREE.js" />
@@ -129,6 +137,7 @@ export const CircleInversion = () => {
                         position="below"
                     />
                 </ImageListItem>
+            </Stack>
             </Stack>
         </Paper>
     );
