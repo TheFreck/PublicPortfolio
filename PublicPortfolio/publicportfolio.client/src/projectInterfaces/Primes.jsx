@@ -1,8 +1,18 @@
-import { Button, Grid2, Paper, Switch, TextField, Typography } from "@mui/material";
+import { Button, Grid2, ImageListItem, ImageListItemBar, Paper, Stack, Switch, TextField, Typography } from "@mui/material";
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import { v4 as uuid } from "uuid";
+import cSharpLogo from "../assets/techLogos/Logo_C_sharp.svg";
 import EventTracker from "../EventTracker";
+
+const logoStyles = {
+    height: "5vh",
+    width: "auto"
+};
+
+const logoLabelStyles = {
+    textAlign: "center"
+}
 
 export const Primes = () => {
     const tracker = EventTracker("interface Primes");
@@ -266,10 +276,11 @@ export const Primes = () => {
                 display: "flex", 
                 flexDirection: "column", 
                 width: "40vw", 
-                maxHeight: "40vhs", 
+                maxHeight: "25vh", 
                 margin: "auto", 
                 padding: "5vh 5vw",
-                textAlign: "center"
+                textAlign: "center",
+                overflowY: "scroll"
             }}
         >
             {
@@ -286,9 +297,10 @@ export const Primes = () => {
             display: "flex", 
             flexDirection: "column",
             width: "80vw",
-            margin: "5vh auto",
+            height: "90vh",
+            margin: "0vh auto",
             background: "white",
-            overflowY: "auto",
+            overflowY: "scroll",
             padding: "5vh 5vw"
         }}
     >
@@ -330,7 +342,7 @@ export const Primes = () => {
         <Grid2
             container
             size={12}
-            sx={{display:"flex", flexDirection: "row", width: "40vw", margin: "auto"}}
+            sx={{display:"flex", flexDirection: "row", width: "40vw", margin: "0 auto"}}
         >
             <Grid2
                 size={6}
@@ -361,10 +373,24 @@ export const Primes = () => {
             container
             sx={{
                 overflowY: "auto",
-                height: "45vh"
             }}
         >
             <PrimesArrayCallback />
+            <br />
+            <Stack
+                direction="row"
+                spacing={2}
+            >
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={cSharpLogo} alt="logo for C#" />
+                    <ImageListItemBar
+                        sx={logoLabelStyles}
+                        title="C#"
+                        position="below"
+                    />
+                </ImageListItem>
+            </Stack>
         </Grid2>
     </Grid2>
 }

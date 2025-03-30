@@ -1,6 +1,18 @@
-import { Paper, Typography } from "@mui/material";
+import { ImageListItem, ImageListItemBar, Paper, Stack, Typography } from "@mui/material";
 import EventTracker from "../EventTracker";
+import reactLogo from "../assets/techLogos/logo-react.svg";
+import viteLogo from "../assets/techLogos/Vitejs-logo.svg.png";
+import muiLogo from "../assets/techLogos/Mui.png";
 import { useEffect } from "react";
+
+const logoStyles = {
+    height: "5vh",
+    width: "auto"
+};
+
+const logoLabelStyles = {
+    textAlign: "center"
+}
 
 export const Life = () => {
     const tracker = EventTracker("interface Life");
@@ -42,6 +54,40 @@ export const Life = () => {
             <Typography>
                 * This application was built on the framework in my React Game Loop project also listed here.
             </Typography>
+            <br />
+            <Stack
+                direction="row"
+                spacing={2}
+            >
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={reactLogo} alt="logo for React" />
+                    <ImageListItemBar
+                        sx={logoLabelStyles}
+                        title="React"
+                        position="below"
+                    />
+                </ImageListItem>
+
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={viteLogo} alt="logo for Vite" />
+                    <ImageListItemBar
+                        sx={logoLabelStyles}
+                        title="Vite"
+                        position="below"
+                    />
+                </ImageListItem>
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={muiLogo} alt="logo for Material-UI" />
+                    <ImageListItemBar
+                        sx={logoLabelStyles}
+                        title="Material-UI"
+                        position="below"
+                    />
+                </ImageListItem>
+            </Stack>
         </Paper>
     )
 }

@@ -1,6 +1,21 @@
-import { Paper, Typography } from "@mui/material";
+import { ImageListItem, ImageListItemBar, Paper, Stack, Typography } from "@mui/material";
 import EventTracker from "../EventTracker";
+import reactLogo from "../assets/techLogos/logo-react.svg";
+import viteLogo from "../assets/techLogos/Vitejs-logo.svg.png";
+import muiLogo from "../assets/techLogos/Mui.png";
+import threeLogo from "../assets/techLogos/THREEjs.png";
+import fiberLogo from "../assets/techLogos/fiber.png";
+import dreiLogo from "../assets/techLogos/drei.png";
 import { useEffect } from "react";
+
+const logoStyles = {
+    height: "5vh",
+    width: "auto"
+};
+
+const logoLabelStyles = {
+    textAlign: "center"
+}
 
 export const SolarSystem = () => {
     const tracker = EventTracker("interface for SolarSystem");
@@ -35,6 +50,67 @@ export const SolarSystem = () => {
         <Typography>
             * The next steps in this project will be to give Jupiter some moons and maybe a thin light ring. Once I solve the "ring problem" for Jupiter I will be able to introduce Saturn, which has a next level ring game <em>and</em> a bunch of moons. I don't have a timeline on this project since it is a curiosity project and evolves as I have time.
         </Typography>
+            <br/>
+            <Stack
+                direction="row"
+                spacing={2}
+            >
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={reactLogo} alt="logo for React" />
+                    <ImageListItemBar
+                    sx={logoLabelStyles}
+                        title="React"
+                        position="below"
+                        />
+                </ImageListItem>
+                
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={viteLogo} alt="logo for Vite" />
+                    <ImageListItemBar
+                    sx={logoLabelStyles}
+                        title="Vite"
+                        position="below"
+                        />
+                </ImageListItem>
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={muiLogo} alt="logo for Material-UI" />
+                    <ImageListItemBar
+                    sx={logoLabelStyles}
+                        title="Material-UI"
+                        position="below"
+                        />
+                </ImageListItem>
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={threeLogo} alt="logo for THREE.js" />
+                    <ImageListItemBar
+                    sx={logoLabelStyles}
+                        title="THREE.js"
+                        position="below"
+                    />
+                </ImageListItem>
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={fiberLogo} alt="logo for Three-Fiber" />
+                    <ImageListItemBar
+                    sx={logoLabelStyles}
+                        title="THREE-Fiber"
+                        position="below"
+                        />
+                </ImageListItem>
+                <ImageListItem
+                >
+                    <img style={logoStyles} src={dreiLogo} alt="logo for Three-Drei" />
+                    <ImageListItemBar
+                    sx={logoLabelStyles}
+                        title="THREE-Drei"
+                        position="below"
+                    />
+                </ImageListItem>
+            </Stack>
     </Paper>
 }
 

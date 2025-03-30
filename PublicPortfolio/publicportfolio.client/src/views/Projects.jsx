@@ -124,9 +124,9 @@ export const Projects = ({ isMobile }) => {
         sx={{
             width: "60vw",
             margin: "auto",
-            overflowY: "scroll",
-            minHeight: "90vh",
-            maxHeight: "95vh"
+            overflowY: "auto",
+            minHeight: "80vh",
+            maxHeight: "85vh"
         }}
     >
         <ImageList
@@ -181,10 +181,11 @@ export const Projects = ({ isMobile }) => {
             ref={modalRef}
         >
             <Box
+                role="modal-box"
                 sx={{
                     background: "white",
                     width: "80vw",
-                    margin: "5vh auto"
+                    margin: "5vh auto",
                 }}
             >
                 <Grid2

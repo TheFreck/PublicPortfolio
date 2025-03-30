@@ -1,6 +1,19 @@
-import { Paper, Typography } from "@mui/material"
+import { ImageListItem, ImageListItemBar, Paper, Stack, Typography } from "@mui/material"
 import EventTracker from "../EventTracker";
+import reactLogo from "../assets/techLogos/logo-react.svg";
+import viteLogo from "../assets/techLogos/Vitejs-logo.svg.png";
+import p5jsLogo from "../assets/techLogos/P5js_Logo.svg.png";
 import { useEffect } from "react";
+
+const logoStyles = {
+    height: "5vh",
+    width: "auto"
+};
+
+const logoLabelStyles = {
+    textAlign: "center"
+}
+
 
 export const FourierFun = () => {
     const tracker = EventTracker("interface FourierFun");
@@ -13,7 +26,9 @@ export const FourierFun = () => {
     return <Paper
         sx={{
             margin: "auto",
-            padding: "5vh 5vw 10vh 5vw"
+            padding: "5vh 5vw 10vh 5vw",
+            height: "75vh",
+            overflowY: "auto"
         }}
     >
         <Typography
@@ -50,6 +65,40 @@ export const FourierFun = () => {
         >
             * More can (and should) be learned from a variety of online resources including <a href="https://en.wikipedia.org/wiki/Fourier_series" target="_blank">Widipedia</a>
         </Typography>
+        <br />
+        <Stack
+            direction="row"
+            spacing={2}
+        >
+            <ImageListItem
+            >
+                <img style={logoStyles} src={reactLogo} alt="logo for React" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="React"
+                    position="below"
+                />
+            </ImageListItem>
+
+            <ImageListItem
+            >
+                <img style={logoStyles} src={viteLogo} alt="logo for Vite" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="Vite"
+                    position="below"
+                />
+            </ImageListItem>
+            <ImageListItem
+            >
+                <img style={logoStyles} src={p5jsLogo} alt="logo for P5js" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="P5js"
+                    position="below"
+                />
+            </ImageListItem>
+        </Stack>
     </Paper>
 }
 

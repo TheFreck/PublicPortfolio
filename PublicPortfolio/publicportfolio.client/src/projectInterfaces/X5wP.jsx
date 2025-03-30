@@ -1,7 +1,25 @@
-import { Paper, Typography } from "@mui/material";
+import { ImageListItem, ImageListItemBar, Paper, Stack, Typography } from "@mui/material";
 import x5Nozomi from "../assets/profileImages/x5Nozomi.png";
 import EventTracker from "../EventTracker";
+import cSharpLogo from "../assets/techLogos/Logo_C_sharp.svg";
+import mongoLogo from "../assets/techLogos/mongoDB.png";
+import semanticLogo from "../assets/techLogos/semanticUIlogo.png";
+import rabbitLogo from "../assets/techLogos/rabbitmq-logo.svg";
+import iotEdgeLogo from "../assets/techLogos/azure-iot-edge-logo.png";
+import reactLogo from "../assets/techLogos/logo-react.svg";
+import viteLogo from "../assets/techLogos/Vitejs-logo.svg.png";
 import { useEffect } from "react";
+
+const logoStyles = {
+    height: "5vh",
+    width: "auto"
+};
+
+const logoLabelStyles = {
+    textAlign: "center",
+    textWrap: 'wrap'
+}
+
 
 export const X5wP = () => {
     const tracker = EventTracker("interface for X5wP");
@@ -46,6 +64,67 @@ export const X5wP = () => {
             marketing video
         </a>. You'll be glad you did!
         </Typography>
+        <br />
+        <Stack
+            direction="row"
+            spacing={2}
+        >
+            <ImageListItem
+            >
+                <img style={logoStyles} src={cSharpLogo} alt="logo for C#" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="C#"
+                    position="below"
+                />
+            </ImageListItem>
+            <ImageListItem
+            >
+                <img style={logoStyles} src={iotEdgeLogo} alt="logo for Azure IoT Edge" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="IoT Edge"
+                    position="below"
+                />
+            </ImageListItem>
+            <ImageListItem
+            >
+                <img style={logoStyles} src={reactLogo} alt="logo for React" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="React"
+                    position="below"
+                />
+            </ImageListItem>
+
+            <ImageListItem
+            >
+                <img style={logoStyles} src={viteLogo} alt="logo for Vite" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="Vite"
+                    position="below"
+                />
+            </ImageListItem>
+            <ImageListItem
+            >
+                <img style={logoStyles} src={rabbitLogo} alt="logo for RabbitMQ" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="RabbitMQ"
+                    position="below"
+                />
+            </ImageListItem>
+            <ImageListItem
+            >
+                <img style={logoStyles} src={semanticLogo} alt="logo for Semantic-UI" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="Semantic-UI"
+                    position="below"
+                />
+            </ImageListItem>
+        </Stack>
         
     </Paper>);
 }

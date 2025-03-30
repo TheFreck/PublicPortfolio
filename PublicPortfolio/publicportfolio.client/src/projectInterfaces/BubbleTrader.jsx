@@ -1,6 +1,19 @@
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, ImageListItem, ImageListItemBar, Paper, Stack, Typography } from "@mui/material";
 import EventTracker from "../EventTracker";
+import reactLogo from "../assets/techLogos/logo-react.svg";
+import viteLogo from "../assets/techLogos/Vitejs-logo.svg.png";
+import muiLogo from "../assets/techLogos/Mui.png";
+import apexLogo from "../assets/techLogos/apexCharts.png";
 import { useEffect } from "react";
+
+const logoStyles = {
+    height: "5vh",
+    width: "auto"
+};
+
+const logoLabelStyles = {
+    textAlign: "center"
+}
 
 export const BubbleTrader = () => {
     const tracker = EventTracker("interface BubbleTrader");
@@ -11,9 +24,12 @@ export const BubbleTrader = () => {
     const LinkTo = () => <a href="https://bubbletraderserver20250122211424.azurewebsites.net/" target="_blank" onClick={tracker("visit project","BubbleTrader")}>Bubble Trader</a>;
 
     return <Paper
+        role="bubbleTrader-content"
         sx={{
             margin: "auto",
-            padding: "5vh 5vw 10vh 5vw"
+            padding: "5vh 5vw 10vh 5vw",
+            height: "75vh",
+            overflowY: "auto"
         }}
     >
         <Typography
@@ -56,6 +72,49 @@ export const BubbleTrader = () => {
         >
             Right now the decisions of each bubble are fairly simple. Future iterations will involve a variable to cover Market Sentiment, or the way changes in the market affect traders' risk tolerances.
         </Typography>
+        <br />
+        <Stack
+            direction="row"
+            spacing={2}
+        >
+            <ImageListItem
+            >
+                <img style={logoStyles} src={reactLogo} alt="logo for React" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="React"
+                    position="below"
+                />
+            </ImageListItem>
+
+            <ImageListItem
+            >
+                <img style={logoStyles} src={viteLogo} alt="logo for Vite" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="Vite"
+                    position="below"
+                />
+            </ImageListItem>
+            <ImageListItem
+            >
+                <img style={logoStyles} src={muiLogo} alt="logo for Material-UI" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="Material-UI"
+                    position="below"
+                />
+            </ImageListItem>
+            <ImageListItem
+            >
+                <img style={logoStyles} src={apexLogo} alt="logo for Apex Charts" />
+                <ImageListItemBar
+                    sx={logoLabelStyles}
+                    title="Apex Charts"
+                    position="below"
+                />
+            </ImageListItem>
+        </Stack>
 
     </Paper>
 }
