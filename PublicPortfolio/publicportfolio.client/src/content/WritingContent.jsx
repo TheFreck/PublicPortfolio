@@ -119,7 +119,7 @@ export const poetry = [
             <Typography>And I pass-</Typography>
             <Typography>&nbsp;&nbsp;&nbsp;&nbsp;Invisible through the ranks of laughing eyes</Typography>
             <Typography>&nbsp;&nbsp;&nbsp;&nbsp;content in my own free flowing asylum</Typography>
-            <Typography>&nbsp;&nbsp;&nbsp;&nbsp;ignorent of myself absent, in the vein of human affairs</Typography>
+            <Typography>&nbsp;&nbsp;&nbsp;&nbsp;ignorant of myself absent, in the vein of human affairs</Typography>
             <Typography>But what a day to sit alone</Typography>
             <Typography>&nbsp;&nbsp;in a crowded room</Typography>
             <Typography>&nbsp;&nbsp;&nbsp;&nbsp;bazaar scenes of slow death</Typography>
